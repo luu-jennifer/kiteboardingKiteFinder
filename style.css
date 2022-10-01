@@ -1,0 +1,231 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 3.2rem;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 10rem;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 3rem 4rem;
+}
+
+input[type="submit"],
+.top {
+    display: block;
+    font-size: 3.2rem;
+    padding: 1rem 2.5rem 1.4rem;
+    margin: 30px auto 20px;
+    border: 5px solid rgba(0, 162, 255, 0.938);
+    background-color: rgba(0, 162, 255, 0.938);
+    border-radius: 20px;
+}
+
+.top {
+    margin-top: 100px;
+    background-color: yellow;
+    border: none;
+}
+
+.questions, 
+.question1 {
+    margin-bottom: 25px;
+    border: none;
+}
+
+main legend {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+form input[type='radio'] {
+    display: none;
+}
+
+form input[type='radio']+label::before {
+    content: '';
+    display: inline-block;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+
+form input[type='radio']:checked+label::before {
+    background-color: rgba(0, 162, 255, 0.938);
+}
+
+form input[type='radio']+label::before {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question1 {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.questions {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+label {
+    padding: 10px;
+}
+
+.results {
+    margin: 100px;
+    padding-bottom: 100px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.kiteSize {
+    font-size: 15rem;
+    color: rgba(255, 0, 242, 0.815);
+    font-family: 'Caveat', cursive;
+}
+
+.required {
+    color: rgb(219, 3, 3);
+    font-family: 'Caveat', cursive;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* wave animation */
+
+.ocean { 
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+
+.wave {
+    background: url('./images/wave.svg') repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 10s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+    margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+
+/* media queries */
+
+@media (max-width: 970px) {
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .kg{
+        height: 500px;
+    }
+
+    input[type="submit"],
+    .top {
+        font-size: 2.2rem;
+        padding: 0.7rem 1.5rem 0.7rem;
+    }
+
+    label,
+    .results {
+        font-size: 1.5rem;
+    }
+
+    .results {
+        margin: 100px;
+        padding-bottom: 0px;
+    }
+    
+    .ocean,
+    .wave {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 300px;
+    }
+}
